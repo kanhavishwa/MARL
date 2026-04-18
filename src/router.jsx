@@ -51,7 +51,7 @@ function DefaultErrorComponent({ error, reset }) {
     </div>
   );
 }
-export const getRouter = () => {
+
   const router = createRouter({
     routeTree,
     context: {},
@@ -60,4 +60,4 @@ export const getRouter = () => {
     defaultErrorComponent: DefaultErrorComponent,
   });
   return router;
-};
+
