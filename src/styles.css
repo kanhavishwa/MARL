@@ -161,13 +161,19 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: var(--font-serif);
     font-optical-sizing: auto;
     letter-spacing: -0.02em;
   }
 
-  .font-mono, code, pre, kbd {
+  .font-mono,
+  code,
+  pre,
+  kbd {
     font-family: var(--font-mono);
   }
 }
@@ -175,8 +181,16 @@
 @layer utilities {
   .paper-grid {
     background-image:
-      linear-gradient(to right, color-mix(in oklab, var(--ink) 6%, transparent) 1px, transparent 1px),
-      linear-gradient(to bottom, color-mix(in oklab, var(--ink) 6%, transparent) 1px, transparent 1px);
+      linear-gradient(
+        to right,
+        color-mix(in oklab, var(--ink) 6%, transparent) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        to bottom,
+        color-mix(in oklab, var(--ink) 6%, transparent) 1px,
+        transparent 1px
+      );
     background-size: 32px 32px;
   }
   .ink-rule {
